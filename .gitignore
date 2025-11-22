@@ -1,0 +1,23 @@
+# Ignore zip archives
+*.zip
+
+# Ignore compressed archives
+*.rar
+*.7z
+*.tar
+*.tar.gz
+
+# Ignore node modules (if ever used)
+node_modules/
+
+# Ignore build or dist output
+dist/
+build/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs & temp
+*.log
+*.tmp
