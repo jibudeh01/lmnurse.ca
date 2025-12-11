@@ -1,0 +1,112 @@
+﻿/* LMNurse Red & White Theme */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #333;
+}
+
+/* Header */
+.top-header {
+  text-align: center;
+  padding: 30px 10px;
+  background: #ffffff;
+  border-bottom: 4px solid #E31B1B;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin: 5px 0;
+  color: #E31B1B;
+  font-size: 28px;
+}
+
+.subtitle {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Form container */
+.form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Steps */
+.form-step {
+  display: none;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.form-step.active {
+  display: block;
+}
+
+h2 {
+  margin-top: 0;
+  color: #E31B1B;
+  font-size: 22px;
+}
+
+/* Labels + Inputs */
+label {
+  display: block;
+  margin: 18px 0 6px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  font-size: 15px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Buttons */
+.next-btn, .back-btn, .submit-btn {
+  padding: 12px 20px;
+  margin-top: 20px;
+  background: #E31B1B;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.next-btn:hover,
+.submit-btn:hover {
+  background: #C71717;
+}
+
+.back-btn {
+  background: #666;
+  margin-right: 10px;
+}
+
+.back-btn:hover {
+  background: #444;
+}
+
+/* File input tweaks */
+input[type="file"] {
+  padding: 6px;
+  background: #fafafa;
+  border: 1px dashed #E31B1B;
+}
