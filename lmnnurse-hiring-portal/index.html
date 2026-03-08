@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LMNurse Job Application Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="top-header">
+    <img src="logo-three.png" class="logo" alt="LMNurse Logo" />
+    <h1>LMNurse Job Application</h1>
+    <p class="subtitle">Apply today and join our mission to support healthcare excellence.</p>
+  </header>
+
+  <main class="form-container">
+
+    <!-- STEP 1 -->
+    <section class="form-step active" id="step1">
+      <h2>Your Information</h2>
+
+      <label>Full Name</label>
+      <input id="name" type="text" required />
+
+      <label>Email Address</label>
+      <input id="email" type="email" required />
+
+      <label>Phone Number</label>
+      <input id="phone" type="text" required />
+
+      <button class="next-btn" onclick="nextStep()">Next</button>
+    </section>
+
+    <!-- STEP 2 -->
+    <section class="form-step" id="step2">
+      <h2>Position & Availability</h2>
+
+      <label>Position Applying For</label>
+      <select id="role" required>
+        <option value="">Select a role</option>
+        <option value="RN">Registered Nurse</option>
+        <option value="RPN">Registered Practical Nurse</option>
+        <option value="PSW">Personal Support Worker</option>
+      </select>
+
+      <label>Availability</label>
+      <select id="availability" multiple>
+        <option value="Full-time">Full-time</option>
+        <option value="Part-time">Part-time</option>
+        <option value="Weekdays">Weekdays</option>
+        <option value="Weekends">Weekends</option>
+        <option value="Overnights">Overnights</option>
+      </select>
+
+      <button class="back-btn" onclick="prevStep()">Back</button>
+      <button class="next-btn" onclick="nextStep()">Next</button>
+    </section>
+
+    <!-- STEP 3 -->
+    <section class="form-step" id="step3">
+      <h2>Upload Documents</h2>
+
+      <label>Resume (PDF or DOCX)</label>
+      <input id="resume" type="file" accept=".pdf,.doc,.docx" required />
+
+      <label>Certificates (Optional)</label>
+      <input id="certs" type="file" accept=".pdf,.png,.jpg" multiple />
+
+      <button class="back-btn" onclick="prevStep()">Back</button>
+      <button class="next-btn" onclick="nextStep()">Next</button>
+    </section>
+
+    <!-- STEP 4 -->
+    <section class="form-step" id="step4">
+      <h2>Eligibility</h2>
+
+      <label>Are you legally eligible to work in Canada?</label>
+      <select id="eligibility" required>
+        <option value="">Select an answer</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label>Experience Summary</label>
+      <textarea id="experience" rows="5"></textarea>
+
+      <button class="back-btn" onclick="prevStep()">Back</button>
+      <button class="submit-btn" onclick="submitApplication()">Submit Application</button>
+    </section>
+
+  </main>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
